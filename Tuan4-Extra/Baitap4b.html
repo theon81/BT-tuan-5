@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            cursor: default;
+            user-select: none;
+            overflow: hidden;
+        }
+        .container {
+            min-height: 100vh;
+            background-image: url(https://www.centralcons.vn/wp-content/uploads/2021/12/PHENNIKA-thumnail-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 500px;
+            height: 600px;
+            border-radius: 8px;
+            box-shadow: 0 5px 16px;
+            background-color: white;
+        }
+
+        .headertext {
+            margin-left: 20px;
+            transform: translate(0%, -20%);
+        }
+
+        #subheader {
+            color: #00000090;
+            transform: translate(0%,-80%);
+        }
+
+        hr {
+            color: #00000090;
+            transform: translate(0%, -30px);
+        }
+
+        .info_forms {
+            transform: translate(0, -30px);
+        }
+
+        .name {
+            width: 45%;
+            margin: 10px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 10px;
+            border-radius: 7px;
+            border: 1px solid #00000090;
+            box-sizing: border-box;
+            background-color: #00000020;
+        }
+
+        .info {
+            width: 95%;
+            margin: 11px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 10px;
+            border-radius: 7px;
+            border: 1px solid #00000090;
+            box-sizing: border-box;
+            background-color: #00000020;
+        }
+
+        label {
+            margin: 12px;
+            color: #00000090;
+        }
+
+        #date0 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #date0 > #date {
+            margin: 12px;
+            width: 30%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: center;
+        }
+
+        .gender > .nn {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 27%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gender > .nn:active {
+            background-color: #00000020;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            transform: translate(0, 10px);
+        }
+
+        #bsubmit {
+            padding-top: 9px;
+            padding-bottom: 9px;
+            width: 200px;
+            color: white;
+            background-color: #00cc00;
+            border: 1px solid #00000000;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        #bsubmit:hover {
+            background-color: #006600;
+        }
+
+        #bsubmit:active {
+            background-color: #005A00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="headertext">
+                <h1>Đăng ký</h1>
+                <p id="subheader">Nhanh chóng và dễ dàng.</p>
+            </div>
+            <hr>
+            <div class="info_forms">
+                <input type="text" class="name" placeholder="Họ" name="fname">
+                <input type="text" class="name" placeholder="Tên" name="name">
+                <input type="text" class="info" placeholder="Số di động hoặc email">
+                <br>
+                <input type="password" class="info" placeholder="Mật khẩu mới" name="pw">
+                <br><br>
+                <label for="bdate">Ngày sinh</label>
+                <br>
+                <div id="date0">
+                    <input type="date" name="bdate" id="date">
+                </div>
+                <br><br>
+                <label for="gender">Giới tính</label>
+                <br>
+                <div class="gender">
+                    <div class="nn">
+                        <input type="radio" name="gender"> Nam
+                    </div>
+                    <div class="nn">
+                        <input type="radio" name="gender"> Nữ
+                    </div>
+                    <div class="nn">
+                        <input type="radio" name="gender"> Tùy chỉnh
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button id="bsubmit">
+                    <strong>Đăng ký</strong>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

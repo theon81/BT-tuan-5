@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        * {
+            cursor: default;
+        }
+
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fmail">Nhập Địa chỉ Mail:</label>
+        <br><br>
+        <input type="text" id="fmail" placeholder="hãy nhập địa chỉ mail" name="fmail">
+        <br><br>
+        <label for="passw">Nhập password</label>
+        <br><br>
+        <input type="password" id="passw" placeholder="hay nhap password" name="passw">
+        <br><br>
+        <label for="fgender">Chọn giới tính</label>
+        <br><br>
+        <input type="radio" name="fgender"> Nam
+        <input type="radio" name="fgender"> Nữ
+        <input type="radio" name="fgender"> Không xác định
+        <br><br>
+        <label for="fmajor">Ngành học</label>
+        <br><br>
+        <input type="checkbox"> CNTT
+        <input type="checkbox"> Kế toán
+        <input type="checkbox"> Du lịch
+        <br><br>
+        <label for="fnote">Ghi chú</label>
+        <br><br>
+        <textarea id="fnote" name="fnote" cols="30" rows="10"></textarea>
+        <button>Reset</button>
+        <input type="submit">
+    </form>
+</body>
+</html>

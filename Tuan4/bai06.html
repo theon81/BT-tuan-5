@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            height: 100vh;
+
+            background-color: white;
+        }
+
+        #inputform label {
+            margin-bottom: 5px; 
+            display: inline-block; 
+            width: 100px; 
+        }
+        
+        .button-section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="login">
+        <h2 align="center">ĐĂNG NHẬP DIỄN ĐÀN</h2>
+
+        <form id="inputform">
+            <label for="username">Username:</label>
+            <input type="text"><br>
+            <label for="password">Password:</label>
+            <input type="password">
+        </form><br>
+
+        <div class="button-section">
+            <input type="submit" value="Đăng nhập">
+            <input type="reset" value="Phục hồi">
+        </div>
+    </fieldset>
+</body>
+</html>

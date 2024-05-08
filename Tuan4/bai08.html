@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thăm dò ý kiến</title>
+    <style>
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            background-color: white;
+        }
+
+        .container {
+            width: 500px;
+            height: 250px;
+
+            border: double black;
+        }
+
+        .info {
+            margin-left: 10px;
+        }
+
+        .info > .checkboxes {
+            margin-left: 105px;
+        }
+
+        .button-section {
+            margin-left: 115px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 align="center">PHIẾU THĂM DÒ Ý KIẾN</h3>
+
+        <div class="info">
+            <label for="username">Tên đăng nhập: </label>
+            <input type="text">
+            <label for="gender">&nbsp;Giới tính: </label>
+            <input type="radio" name="gender">Nam
+            <input type="radio" name="gender">Nữ
+            <br><br>
+
+            <label for="interests">Các mục bạn thường quan tâm trên Internet</label>
+            <br>
+            <input class="checkboxes" type="checkbox">Tin tức<br>
+            <input class="checkboxes" type="checkbox">Giải trí<br>
+            <input class="checkboxes" type="checkbox">Góc học tập<br>
+            <input class="checkboxes" type="checkbox">Các mục khác
+        </div>
+        <br>
+        <div class="button-section">
+            <input type="submit" value="Gửi đi">
+            <input type="reset" value="Phục hồi">
+        </div>
+    </div>
+</body>
+</html>

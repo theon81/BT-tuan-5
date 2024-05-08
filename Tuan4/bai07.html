@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đóng góp ý kiến</title>
+    <style>
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            background-color: white;
+        }
+        
+        .comment {
+            width: 400px;
+            height: 300px;
+
+            border: 2px solid black;
+        }
+
+        #inform {
+            margin-left: 10px;
+        }
+
+        textarea {
+            margin-top: 5px;
+            margin-left: 70px;
+        }
+
+        .button-section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div class="comment">
+        <h3 align="center">ĐÓNG GÓP Ý KIẾN</h2>
+        
+        <form id="inform">
+            <label for="name">Họ và tên:</label>
+            <input type="text"><br>
+            
+            <label for="content">Nội dung góp ý</label><br>
+            <textarea placeholder="VD: Ban quản trị nên thường xuyên cập nhật thông tin, ..." cols="30" rows="10"></textarea>
+            
+            <div class="button-section">
+                <input type="submit" value="Gửi đi">
+                <input type="reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

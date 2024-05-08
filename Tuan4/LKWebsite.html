@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên kết website</title>
+    <style>
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+            background-color: white;
+        }
+
+        #container {
+            border: double black;
+            width: 170px;
+            height: 155px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3, form {
+            transform: translateY(-4px);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h3>Liên kết website</h3>
+        <form>
+            <select onchange="la(this.value)">
+                <option disabled selected>-------- Tin tuc --------</option>
+                <option value="https://laodong.vn/">Báo lao động</option>
+                <option value="https://vnexpress.net/">Tin nhanh Việt Nam</option>
+                <option value="https://tuoitre.vn/">Báo Tuổi Trẻ</option>
+            </select>
+        </form>
+    </div>
+    
+    <script>
+        function la(src) {
+            window.location=src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #044c00;
+        }
+
+        .maintable {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            width: 90vw;
+
+            border-collapse: collapse;
+
+            background-color: #beffc585;
+            color: #26572a;
+        }
+        
+        table, td {
+            border: 2px solid black;
+        }
+
+        td {
+            padding: 3px;
+        }
+
+        #congrats {
+            text-align: center;
+        }
+
+        #inputt {
+            width: 90%;
+
+            border: 2px solid #00000030;
+            border-radius: 4px;
+
+            padding: 2px;
+
+            display: grid;
+            margin: auto;
+        }
+
+        #submit {
+            padding: 3px;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+    <br>
+    <div class="maintable">
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <input id="inputt" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input id="inputt" type="text"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input id="inputt" type="number"></td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td id="gender">
+                    <input type="radio">Nam
+                    <input type="radio">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select id="inputt" name="occupation">
+                        <option value="gv">Giáo viên</option>
+                        <option value="hs">Học sinh</option>
+                        <option value="kd">Kinh doanh</option>
+                        <option value="td">Tự do</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select id="inputt" size="4" multiple>
+                        <option value="kdr">Kem đánh răng</option>
+                        <option value="bg">Bột giặt</option>
+                        <option value="dgd">Dầu gội đầu</option>
+                        <option value="st">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td><input id="inputt" type="number" placeholder="VD: 250000"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input id="submit" type="submit" value="Đồng ý">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="congrats">
+                    <span style="color: #ff4061;">
+                        Bạn đã đăng ký thành công!!!
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

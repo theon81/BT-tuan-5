@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo cáo thuế</title>
+    <style>
+        body {
+            display:flex; 
+            flex-direction:column; 
+            align-items: center;
+
+            scale: 80%;
+
+            background-color: white;
+        }
+
+        .header {
+            display: flex;
+
+            color: #0F4761;
+
+            letter-spacing: -1px;
+            margin-left: 30px;
+        }
+
+        h1 {
+            font-size: x-large;
+        }
+
+        .header > .left {
+            transform: rotateZ(4deg);
+        }
+
+        .header > .right {
+            transform: rotateZ(-4deg);
+        }
+
+        img {
+            position: relative;
+        }
+
+        table {
+            width:900px;
+
+            border-collapse: collapse;
+            border: 4px double black; 
+        }
+
+        th, td {
+            border-left: 1px solid black; 
+        }
+
+        th {
+            font-style: italic;
+            background-color: #47D459;
+        }
+
+        tr {
+            border-bottom: 1px dotted black; 
+        }
+
+        #thue {
+            text-align: end;
+
+            transform: translate(-3%, 20%);
+
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        #info {
+            text-align: center;
+
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="left">
+            BÁO CÁO THUẾ CỦA
+        </h1> &nbsp;
+        <h1 class="right">
+            CÁC HỘ KINH DOANH
+        </h1>
+        <img src="https://static.chotot.com/storage/chotot-kinhnghiem/c2c/2021/06/1a62eacf-thu-nhap-chiu-thue-1.jpeg" width="120px">
+    </div>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th colspan="2">Mã số Thuế</th>
+            <th colspan="2.5">Họ và tên</th>
+            <th colspan="1.5">Thuế<br>GTGT</td>
+            <th colspan="1.5">Thuế<br>TNCN</td>
+            <th colspan="1.5">Thuế<br>TTĐB</td>
+            <th>Tổng<br>thuế</td>
+
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info" colspan="2">8008973238</td>
+            <td colspan="2.5">Ngô Ngọc Anh</td>
+            <td id="thue" colspan="1.5">480,000</td>
+            <td id="thue" colspan="1.5">240,000</td>
+            <td id="thue" colspan="1.5">0</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info" colspan="2">0101991815</td>
+            <td colspan="2.5">Hồ Anh Tuấn</td>
+            <td id="thue" colspan="1.5">575,000</td>
+            <td id="thue" colspan="1.5">230,000</td>
+            <td id="thue" colspan="1.5">0</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info" colspan="2">0106935370</td>
+            <td colspan="2.5">Lê Quang Bằng</td>
+            <td id="thue" colspan="1.5">800,000</td>
+            <td id="thue" colspan="1.5">400,000</td>
+            <td id="thue" colspan="1.5">100,000</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info"colspan="2">8155266215</td>
+            <td colspan="2.5">Bùi Chí Chiến</td>
+            <td id="thue" colspan="1.5">456,000</td>
+            <td id="thue" colspan="1.5">228,000</td>
+            <td id="thue" colspan="1.5">0</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info"colspan="2">0106935557</td>
+            <td colspan="2.5">Nguyễn Quang Vinh</td>
+            <td id="thue" colspan="1.5">486,000</td>
+            <td id="thue" colspan="1.5">243,000</td>
+            <td id="thue" colspan="1.5">153,000</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td id="info" colspan="2">0102209970</td>
+            <td colspan="2.5">Nguyễn Tuyết Hạnh</td>
+            <td id="thue" colspan="1.5">650,000</td>
+            <td id="thue" colspan="1.5">325,000</td>
+            <td id="thue" colspan="1.5">129,000</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>
